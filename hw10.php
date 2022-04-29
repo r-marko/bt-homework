@@ -35,10 +35,9 @@ else echo "Izaberite broj od 0 do 6";
 $a=rand(1,10);
 $b=rand(1,10);
 $c=rand(1,10);
-function sub($a,$b,$c){
-    $d=$a+$b+$c;
-    return $d;
-}
-echo "<br>Zbir brojeva $a, $b i $c je " . sub($a,$b,$c);
+$e=array($a,$b,$c);
+$d=array_sum($e);
+
+echo "<br>Zbir brojeva $a, $b i $c je $d";
 
 ?>
