@@ -3,30 +3,42 @@
 // Zadatak 1
 $a=200;
 $b=80;
+function sabiranje($a, $b){
 echo "Zbir dva broja je: " . $a+$b . "<br>";
+}
+function oduzimanje ($a,$b){
 echo "Razlika dva broja je: " . $a-$b . "<br>";
+}
+function mnozenje ($a,$b){
 echo "Proizvod dva broja je: " . $a*$b . "<br>";
+}
+function deljenje ($a,$b){
 echo "Kolicnik dva broja je: " . $a/$b . "<br>";
+}
+sabiranje($a,$b);
+oduzimanje($a,$b);
+mnozenje($a,$b);
+deljenje($a,$b);
 
 
 // Zadatak 2
-$a=2;
-switch($a){
-    case 0: echo "Danas je ponedeljak"; break;
-    case 1: echo "Danas je utorak"; break;
-    case 2: echo "Danas je sreda"; break;
-    case 3: echo "Dans je cetvrtak"; break;
-    case 4: echo "Danas je petak"; break;
-    case 5: echo "Danas je subota"; break;
-    case 6: echo "Danas je nedelja"; break;
-    default: echo "Unesite vrednost od 0 do 6";
+$a=2; // ovo je promenljiva koja se menja
+if($a>=0 && $a<7){
+$b=array("ponedeljak", "utorak", "sreda", "cetvrtak", "petak", "subota", "nedelja");
+$c=$b[$a];
+echo "Danas je $c";
 }
+else echo "Izaberite broj od 0 do 6";
+
 
 // Zadatak 3
 $a=rand(1,10);
 $b=rand(1,10);
 $c=rand(1,10);
-$d= $a + $b +$c;
-echo "<br>Zbir brojeva $a, $b i $c je $d";
+function sub($a,$b,$c){
+    $d=$a+$b+$c;
+    return $d;
+}
+echo "<br>Zbir brojeva $a, $b i $c je " . sub($a,$b,$c);
 
 ?>
