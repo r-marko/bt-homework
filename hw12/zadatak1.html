@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Kalkulator kalorija</legend>
+        <form action="zadatak1.php" method="POST">
+            <label>Unesite vašu masu:
+                <input type="number" name="tezina" max="250" size="3" placeholder="kg">
+            </label>
+            <br>
+            <label>Unesite vaše zanimanje: 
+                <input style="margin:5px 0px;" type="text" name="aktivnost">
+            </label>
+            <br>
+            <label>Unesite vaše godine: 
+                <input type="number" max="130" size="3" name="godine">
+            </label>
+            <br>
+            <input type="submit" value="Pošalji" style="width:100px; margin:5px 0px">
+            <br>
+            <input type="reset" value="Poništi">
+        </form>
+    </fieldset>
+</body>
+</html>
